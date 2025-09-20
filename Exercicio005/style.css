@@ -1,0 +1,33 @@
+/*CSS - Cascading Style Sheet*/
+
+/*Seletor*/
+
+body{
+    /*Propriedade : Valor*/
+    color: #294048;
+    background-color: #959cf8;
+}
+
+#foto{
+    width: 250px;
+    border: 10px double #000000;
+    border-radius: 1rem;
+}
+
+/*
+Cores Originais:
+texto: #294048
+fundo: #959cf8
+
+cor manhã:
+texto: #2302ff
+fundo: #faef28
+
+cor tarde: 
+texto: #d7d2fd
+fundo: #2875fa
+
+cor noite: 
+texto: #d6d1ff
+fundo: #3f4859
+*/
