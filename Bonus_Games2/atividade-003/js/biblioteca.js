@@ -7,17 +7,17 @@ var banners = [
 var bannerAtual = 0;
 
 function trocaBanner() {
-	bannerAtual = (bannerAtua1 + 1) % 5;
-	document.querySelector('#banner img').scr = banners[bannerAtual];
+	bannerAtual = (bannerAtual + 1) % 5;
+	document.querySelector('#banner img').src = banners[bannerAtual];
 }
 
-var banner_controle = setinterval(trocaBanner, 4000);
+var banner_controle = setInterval(trocaBanner, 4000);
 
 
 function Controle(acao) {
-	if (acao == "pla") {
-		banner_controle = setinterval(trocaBanner, 4000);
+	if (acao == "play") {
+		banner_controle = setInterval(trocaBanner, 4000);
 	} else {
-		clearinterval(banner_controle);
+		clearInterval(banner_controle);
 	}
 }

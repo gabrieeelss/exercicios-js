@@ -54,3 +54,8 @@ body{
 	top: 15px; 
 }
 
+#banner img{
+width: 960px;
+height: 300px;
+object-fit: cover;
+}
