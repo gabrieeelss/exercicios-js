@@ -1,5 +1,5 @@
 function mostrarnumero(){
-    1et numero = document.getElementbyid("numero").valu
-    documen.getElementById("respost").innertext = "o numero informado foi: " +  Numero
-    documen.getElementById("Numero").value = ""
+    let numero = document.getElementById("numero").value
+    document.getElementById("resposta").innerText = "o numero informado foi: " +  numero
+    document.getElementById("numero").value = ""
 }
