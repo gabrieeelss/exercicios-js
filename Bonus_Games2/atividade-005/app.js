@@ -1,7 +1,7 @@
-Document.getElementById('btcalcular').addEventListener('click', function(){
-    let salario = Document.getelementById('salario').valeu
-    let horastrabalhadas = parseFloat(Document.getElementById('horas-trabalhadas').valeu)
-    let cargahoraria = Document.getElementByid('cargahoraria').valeu
-    let horasextras = fnhorasextras(salario, horastrabalhadas, cargahoraria)
-    Document.getElementById('resposta').innerhtml = fnFormatarMonetario(horasextras)
+document.getElementById('bt-calcular').addEventListener('click', function(){
+    let salario = document.getElementById('salario').value
+    let horasTrabalhadas = parseFloat(document.getElementById('horasTrabalhadas').value)
+    let cargaHoraria = document.getElementById('cargaHoraria').value
+    let horasExtras = fnHorasExtras(salario, horasTrabalhadas, cargaHoraria)
+    document.getElementById('resposta').innerHTML = fnFormatarMonetario(horasExtras)
 })
