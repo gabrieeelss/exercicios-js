@@ -16,4 +16,6 @@ function fnListarVeiculos() {
     }
 }
 
-function fnLimpar(){}
+function fnLimpar(){
+    document.getElementById("form_veiculos").reset()
+}
