@@ -1,0 +1,43 @@
+form{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    width: 400px;
+    background-color: #eee;
+    color: #151515;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 15px black;
+}
+label{
+    width: 100%;
+    margin-block: 0.4rem;
+}
+input{
+    position: relative;
+    width: 100%; 
+    border: 1px solid #252525;
+    height: 30px;
+    box-shadow: 0 1px 5px #252525;
+    outline: none;
+}
+
+button{
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 7px;
+    border: none;
+    background-color: rgb(24, 114, 24);
+    color: #eee;
+    border-radius: 7px;
+}
+
+button:hover{
+    box-shadow: 0 0 5px rgb(24, 114, 24), 0 0 10px rgb(24, 114, 24), 0 0 50px rgb(24, 114, 24), 0 0 100px rgb(24, 114, 24);
+}
