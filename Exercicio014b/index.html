@@ -13,10 +13,12 @@
         <img src="logo.png" alt="pokemon" class="img-fluid mx-auto d-block" width="300">
         <div class="row mt-3">
             <div class="col-6 col-md-4 mx-auto border border-3 border-black text-center p-4">
+                <img class="quiz" src="quiz.png">
                 <h3 id="numero">Número</h3>
                 <h1 id="nome">Nome do Pokémon</h1>
                 <img src="" id="foto">
-                <button type="button" class="btn btn-outline-danger mt-2 fw-bold d-block mx-auto">REVELAR</button>
+                <button type="button" class="btn btn-outline-danger mt-2 fw-bold d-block mx-auto" onclick="fnRevelar()">REVELAR</button>
+                <button type="button" class="btn btn-outline-primary mt-2 fw-bold d-block mx-auto" onclick="fnListarPokemon();fnEsconder()">SORTEAR</button>
             </div>
         </div> 
     </div>
