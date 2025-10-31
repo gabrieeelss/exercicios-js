@@ -15,20 +15,24 @@
         <h1 class="text-center">Calculadora</h1>
         <div class="row">
             <div class="col">
-                <form class="mx-auto p-5">
+                <form class="mx-auto p-5" id="formulario">
                     <label class="form-label">Valor da conta</label>
-                    <input class="form-control" id="valor-conta">
+                    <input type="number" class="form-control" id="valor-conta">
                     <label class="form-label">Valor %</label>
-                    <input class="form-control" id="porcentagem">
+                    <input type="number" class="form-control" id="porcentagem">
 
-                    <select class="form-select mt-3">
+                    <select class="form-select mt-3" id="tipo">
                         <option selected>Função</option>
-                        <option value="1">Desconto</option>
-                        <option value="2">Acréscimo</option>
+                        <option value="desconto">Desconto</option>
+                        <option value="acrescimo">Acréscimo</option>
                     </select>
 
-                    <button type="button" class=" btn btn-primary mt-3" onclick="fnCalcular()">Calcular</button>
+                    <button type="button" id="btCalcular" class="btn btn-primary mt-3" onclick="fnCalcular()">Calcular</button>
                 </form>
+                <div class="container border-black">
+                <h3 class="text-center">Valor à pagar:</h3>
+                <h2 class="text-center" id="resultado"></h2>
+                </div>
             </div>
         </div>
     </div>
