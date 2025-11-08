@@ -8,13 +8,13 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container border border-dark rounded-2 m-3 mb-3 p-5">
+    <div class="container border border-dark rounded-2 m-3 mb-3 p-5" id="formulario">
         <div class="row">
             <div class="col">
                 <label>Nome do filme</label>
-                <input type="text" class="form-control" id="nome-filme">
+                <input type="text" class="form-control" id="nomeFilme">
                 <label>Foto de Capa</label>
-                <input type="url" class="form-control" id="nome-filme">
+                <input type="url" class="form-control" id="fotoCapa">
                 </div>
             </div>
             <div class="row g2">
@@ -27,7 +27,7 @@
                 <div class="col">
                     <label></label>
                     <div>
-                        <select class="form-select" id="formSelect">
+                        <select class="form-select" id="classificacaoFilme">
                             <option selected class="text-center">Classifique o Filme⭐</option>
                             <option value="1">⭐</option>
                             <option value="1">⭐⭐</option>
@@ -40,7 +40,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <label>trailer</label>
+                    <label>Trailer</label>
                     <input type="url" class="form-control" id="linkTrailer">
                 </div>
             </div>
@@ -51,15 +51,17 @@
                 </div>
                 <div class="col">
                     <label>Duração</label>
-                    <input type="time" class="form-control" id="tempoFilme">
+                    <input type="time" class="form-control" id="duracaoFilme">
                 </div>
             </div>
             <div class="mb-3">
                     <label class="form-label">Descrição</label>
                     <textarea class="form-control" id="descricaoFilme" rows="4"></textarea>
             </div>
+            <button type="submit" class="btn btn-primary col-3" id="btSalvar">Enviar</button>
         </div>
     </div>
-    
+    <div id="listaDeFilmes"></div>
+    <script src="app.js"></script>
 </body>
 </html>
